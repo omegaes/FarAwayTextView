@@ -89,5 +89,5 @@ Not yet
 
 ## Author
 
-* **Abdulrahman Babil** - *Senior Application Developer* - [Strateq](http://abdul.mega4tech.com)
+* **Abdulrahman Babil** - *Senior Application Developer at Strateq Sdn Bhd - Malaysia* - [Portfolio](http://abdul.mega4tech.com)
 
