@@ -1,3 +1,4 @@
+[![Android Arsenal]( https://img.shields.io/badge/Android%20Arsenal-FarAwayTextView-green.svg?style=flat )]( https://android-arsenal.com/details/1/6712 )
 # Android Link Preview
 
 An A custom TextView component for Android platform that calculates and updates its text regarding to geolocation distance between two geolocation points
