@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.github.StephenVinouze.AdvancedRecyclerView:core-2.0.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/core-2.0.0.aar/3bbdf69d263fd1ffb6f69aa82ae7616c/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/core-2.0.0.aar/3bbdf69d263fd1ffb6f69aa82ae7616c/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.StephenVinouze.AdvancedRecyclerView/core/2.0.0/1ed662eeaa03f601549e5591947705830c4dc8db/core-2.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="FarAwayTextView">
+
+        <attr name="source_longitude" format="float" />
+
+        <attr name="source_latitude" format="float" />
+
+        <attr name="destination_longitude" format="float" />
+
+        <attr name="destination_latitude" format="float" />
+
+        <attr name="use_current_location_as_source" format="boolean" />
+
+        <attr name="unit">
+
+            <enum name="meter" value="1" />
+
+            <enum name="mile" value="2" />
+
+        </attr>
+
+        <attr name="prefix" format="string" />
+
+        <attr name="postfix" format="string" />
+
+
+    </declare-styleable>
+
+
+</resources>

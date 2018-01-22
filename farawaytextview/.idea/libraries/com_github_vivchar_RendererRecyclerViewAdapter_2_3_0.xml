@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.github.vivchar:RendererRecyclerViewAdapter-2.3.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/RendererRecyclerViewAdapter-2.3.0.aar/dfef187a822cae4dd87f75ae483e6f30/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/RendererRecyclerViewAdapter-2.3.0.aar/dfef187a822cae4dd87f75ae483e6f30/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.vivchar/RendererRecyclerViewAdapter/2.3.0/88784a57ea7754ed9b4fb997f8c046eec1980b78/RendererRecyclerViewAdapter-2.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="meters">%2$s %1$s M %3$s</string>
+    <string name="feet">%2$s %1$s feet %3$s</string>
+    <string name="mile">%2$s %1$s mile %3$s</string>
+    <string name="miles">%2$s %1$s miles %3$s</string>
+    <string name="km">%2$s %1$s KM %3$s</string>
+    <string name="destination_not_defined">Please define destination</string>
+    <string name="at_destination">At destination!</string>
+    <string name="location_service_not_available">Source location not defined, make sure gps permission is granted</string>
+    <string name="source_not_defined">Source location not defined</string>
+</resources>

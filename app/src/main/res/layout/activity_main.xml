@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/perm_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grant GPS Permission" />
+
+    <com.strateq.farawaytextview.FarAwayTextView
+        android:id="@+id/far_away_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:postfix="away"
+        app:prefix="just"
+        app:unit="meter"
+        app:use_current_location_as_source="true" />
+
+
+    <com.strateq.farawaytextview.FarAwayTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:postfix="away"
+        app:prefix="just"
+        app:unit="meter"
+        tools:text="Hello World!" />
+
+    <com.strateq.farawaytextview.FarAwayTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:destination_latitude="3.3308616"
+        app:destination_longitude="101.6408900"
+        app:postfix="away"
+        app:prefix="just"
+        app:unit="meter"
+        app:use_current_location_as_source="true"
+        tools:text="Hello World!" />
+
+    <com.strateq.farawaytextview.FarAwayTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:destination_latitude="3.3308616"
+        app:destination_longitude="101.6408900"
+        app:postfix="away"
+        app:prefix="just"
+        app:unit="mile"
+        app:use_current_location_as_source="true"
+        tools:text="Hello World!" />
+
+</LinearLayout>
