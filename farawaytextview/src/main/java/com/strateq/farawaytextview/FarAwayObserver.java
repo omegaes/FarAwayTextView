@@ -8,6 +8,7 @@ import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
+import android.util.Log;
 
 import java.util.Observable;
 import java.util.Observer;
@@ -30,6 +31,7 @@ public class FarAwayObserver extends Observable implements LocationListener {
     public static FarAwayObserver getInstance(Context context) {
         if (instance == null)
             instance = new FarAwayObserver(context);
+
         return instance;
     }
 
@@ -39,10 +41,16 @@ public class FarAwayObserver extends Observable implements LocationListener {
     }
 
     public void LocationPermissionGranted(Context context) {
+
         if (ActivityCompat.checkSelfPermission(context, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(context, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             return;
         }
-        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 1000, 0, this);
+
+        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 1, 0, this);
+        locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 1, 0, this);
+
+        notifyObservers(locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER));
+        notifyObservers(locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER));
 
     }
 
