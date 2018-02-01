@@ -9,6 +9,7 @@ import android.location.LocationManager;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.util.Log;
+import android.widget.TextView;
 
 import java.util.Observable;
 import java.util.Observer;
@@ -66,6 +67,23 @@ public class FarAwayObserver extends Observable implements LocationListener {
         if (countObservers() == 0) {
             shutDown();
         }
+    }
+
+    @Override
+    public synchronized void addObserver(Observer o) {
+        super.addObserver(o);
+        if(o instanceof FarAwayTextView){
+            FarAwayTextView textView = (FarAwayTextView)o;
+            if (textView.getContext() == null)
+                return;
+            if (ActivityCompat.checkSelfPermission(textView.getContext(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(textView.getContext(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+                return;
+            }
+            notifyObservers(locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER));
+            notifyObservers(locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER));
+        }
+
+
     }
 
     private void shutDown() {

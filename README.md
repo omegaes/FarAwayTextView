@@ -18,7 +18,7 @@ Add it in your root build.gradle at the end of repositories:
 Add the dependency
 ```
     dependencies {
-    	compile 'com.github.omegaes:FarAwayTextView:1.0.2'
+    	compile 'com.github.omegaes:FarAwayTextView:1.0.3'
     }
 ````
 
