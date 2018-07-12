@@ -47,8 +47,8 @@ public class FarAwayObserver extends Observable implements LocationListener {
             return;
         }
 
-        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 1, 0, this);
-        locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 1, 0, this);
+        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 1000 * 60, 500, this);
+        locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 1000 * 60, 500, this);
 
         notifyObservers(locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER));
         notifyObservers(locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER));
